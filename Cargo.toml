@@ -1,9 +1,13 @@
 [package]
-name = "tantivy_uffd"
+name = "tantivy-uffd"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Query a remote tantivy index with HTTP range requests."
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/ellenhp/tantivy-uffd/"
+keywords = ["tantivy", "http", "range-requests", "search"]
+categories = ["database-implementations", "data-structures"]
+readme = "README.md"
 
 [dependencies]
 dashmap = "5.5.3"
@@ -19,4 +23,4 @@ userfaultfd = { version = "0.8.1", features = ["linux4_14", "linux5_7"] }
 [dev-dependencies]
 ctor = "0.2.6"
 tiny_http = "0.12.0"
-tantivy = { version = "*", default_features = true }
+tantivy = { version = "0.21.1", default_features = true }

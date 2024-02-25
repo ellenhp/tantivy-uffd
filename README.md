@@ -22,4 +22,4 @@ You can implement your own remote directory by fetching slices on-demand in `Fil
 
 ### License
 
-Dual MIT/Apache 2.0. This crate contains some code from tantivy, namely `query_len.rs`. Copyright notices, the authors file and original license have been preserved.
+Dual MIT/Apache 2.0, at your option. This crate contains some code from tantivy, namely `query_len.rs`. Copyright notices, the authors file and original MIT license have been preserved.
