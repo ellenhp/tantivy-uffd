@@ -15,12 +15,12 @@ log = "0.4.20"
 lru = "0.12.2"
 nix = { version = "0.27.1", features = ["ioctl", "mman"] }
 reqwest = { version = "0.11.24", features = ["blocking"] }
-tantivy = { version = "0.21.1", default_features = false }
-tantivy-common = "0.6.0"
-tokio = { version = "1.36.0", features = ["rt", "sync", "macros"] }
+tantivy = { version = "0.22.0", default-features = false }
+tantivy-common = "0.7.0"
+tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "sync", "macros"] }
 userfaultfd = { version = "0.8.1", features = ["linux4_14", "linux5_7"] }
 
 [dev-dependencies]
 ctor = "0.2.6"
 tiny_http = "0.12.0"
-tantivy = { version = "0.21.1", default_features = true }
+tantivy = { version = "0.21.1", default-features = true }
